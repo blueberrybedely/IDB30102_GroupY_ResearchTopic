@@ -70,27 +70,64 @@ detection models using power-system knowledge.
 * **DOI / Link:**
 
    ### Paper 6:
-* **Author(s):** Narsing and Srinivasan
-* **Year:** 2025
-* **Objective/Problem:** Detect known and zero-day attacks in SCADA and IoT networks using AI-based anomaly detection.
-* **Method / Approach:** AI-based anomaly detection framework with edge and centralised AI models.
-* **Functionality / Process:** Collects network/system data, preprocesses and normalises it, detects abnormal behaviour in real time, and triggers intrusion response. 
-* **Dataset / Tools:** Real industrial datasets and synthetic adversarial cases from a cyber-physical testbed.
-* **Main Findings:** The proposed AI model achieved 94.5% overall accuracy, 97.6% for known threats, and 91.3% for unknown threats.
-* **Limitation:** AI model has higher CPU, memory, and power usage due to computational requirements 
-* **Relevance / Research Gap:** Future work could use federated learning, digital twins, and quantum-resistant cryptography and improve interoperability across different SCADA/IIoT platforms.
+* **Author(s):** Cobilean et al.
+* **Year:** 2023
+* **Objective/Problem:** Address limited anomalous data and lack of explainability in deep learning-based anomaly detection for CPS.
+* **Method / Approach:** Informed deep learning by integrating prior knowledge into the dataset,model architecture or loss function.
+* **Functionality / Process:** Uses physical equations, simulations, and system relationships to improve training, constrain model outputs and detect abnormal CPS behaviour
+* **Dataset / Tools:** Various CPS data sources, simulations, testbeds and examples from wind farms, smart grids,industrial CPS and water distribution systems.
+* **Main Findings:** Informed deep learning can improve anomaly detection when data is limited while increasing model explainability and trust.
+* **Limitation:** Requires accurate prior knowledge and multidisciplinary expertise. Incorrect constraints can cause underfitting, overfitting or difficult optimisation.
+* **Relevance / Research Gap:** Need to determine suitable prior knowledge and constraints for different CPS environments while maintaining effective detection with limited data.
 * **DOI / Link:**
 
    ### Paper 7:
-* **Author(s):** Narsing and Srinivasan
-* **Year:** 2025
-* **Objective/Problem:** Detect known and zero-day attacks in SCADA and IoT networks using AI-based anomaly detection.
-* **Method / Approach:** AI-based anomaly detection framework with edge and centralised AI models.
-* **Functionality / Process:** Collects network/system data, preprocesses and normalises it, detects abnormal behaviour in real time, and triggers intrusion response. 
-* **Dataset / Tools:** Real industrial datasets and synthetic adversarial cases from a cyber-physical testbed.
-* **Main Findings:** The proposed AI model achieved 94.5% overall accuracy, 97.6% for known threats, and 91.3% for unknown threats.
-* **Limitation:** AI model has higher CPU, memory, and power usage due to computational requirements 
-* **Relevance / Research Gap:** Future work could use federated learning, digital twins, and quantum-resistant cryptography and improve interoperability across different SCADA/IIoT platforms.
+* **Author(s):** Hao et al.
+* **Year:** 2023
+* **Objective/Problem:** Detect cyberattacks, malicious behaviours and network anomalies in ICS-CPs in real time with low computational complexity.
+* **Method / Approach:** Hybrid SARIMA + LSTM anomaly detection with dynamic thresholds.
+* **Functionality / Process:** SARIMA predicts short term traffic and creates dynamic thresholds. LSTM models long-term background traffic and supplements the thresholds. Grubbs test identifies anomalies and calculates anomaly duration/degree.
+* **Dataset / Tools:** Real-time ICS-CPS testbed data collected for more than 72 hours at 1ms sampling rate, covering power generation,natural gas pipeline and urban railway
+* **Main Findings:** Achieved 95% overall detection accuracy, 98.4% PPV and 95.4% NPV. The hybrid model reduced false alarms and had an average processing time of ≤ 0.11 s. 
+* **Limitation:** Tested mainly on a scaled-down ICS-CPS testbed; transferability to different real industrial environments still requires further validation. 
+* **Relevance / Research Gap:** Further test the model on more diverse real-world industrial systems, improve transferability, and compare it with more state-of-the-art anomaly detection methods.
 * **DOI / Link:**
 
 
+  ### Paper 8:
+* **Author(s):** Vaughn et al.
+* **Year:** 2024
+* **Objective/Problem:** Improve anomaly detection in CPS by reducing false positives and identifying the most relevant features for different cyberattacks. 
+* **Method / Approach:** Genetic Algorithm (GA)-based feature selection with dynamic thresholding, combined with Random Forest (RF), Gaussian Naive Bayes (GNB), and K-Nearest Neighbors (KNN). SMOTE was also used to handle class imbalance.
+* **Functionality / Process:** Dataset is cleaned and merged according to time → ML models are evaluated → GA selects important features using a fitness function → dynamic threshold updates feature importance → selected features are used for anomaly detection. 
+* **Dataset / Tools:** Hardware-in-the-Loop Water Distribution Testbed (WDT) Dataset, containing network and physical data for normal conditions and four attack types. 
+* **Main Findings:** GA feature selection improved the performance of the ML models. RF achieved 95.2% accuracy after GA feature selection. With SMOTE, RF achieved 99.8% for MITM and 100% for DOS attack detection. GA was most promising when combined with RF
+* **Limitation:** Lack of real CPS attack data; WDT/testbed may not fully represent the complexity of real CPS. GA also has interpretability, computational resource, and compatibility issues for real-world deployment.
+* **Relevance / Research Gap:** Future work should develop a more sophisticated fitness function, explore hybrid deep-learning models, and test additional CPS datasets to determine whether the findings generalize beyond water distribution systems. 
+
+
+* **DOI / Link:**
+
+   ### Paper 9:
+* **Author(s):** Cobilean et al.
+* **Year:** 2023
+* **Objective/Problem:** Address limited anomalous data and lack of explainability in deep learning-based anomaly detection for CPS.
+* **Method / Approach:** Informed deep learning by integrating prior knowledge into the dataset,model architecture or loss function.
+* **Functionality / Process:** Uses physical equations, simulations, and system relationships to improve training, constrain model outputs and detect abnormal CPS behaviour
+* **Dataset / Tools:** Various CPS data sources, simulations, testbeds and examples from wind farms, smart grids,industrial CPS and water distribution systems.
+* **Main Findings:** Informed deep learning can improve anomaly detection when data is limited while increasing model explainability and trust.
+* **Limitation:** Requires accurate prior knowledge and multidisciplinary expertise. Incorrect constraints can cause underfitting, overfitting or difficult optimisation.
+* **Relevance / Research Gap:** Need to determine suitable prior knowledge and constraints for different CPS environments while maintaining effective detection with limited data.
+* **DOI / Link:**
+
+ ### Paper 10:
+* **Author(s):** Cobilean et al.
+* **Year:** 2023
+* **Objective/Problem:** Address limited anomalous data and lack of explainability in deep learning-based anomaly detection for CPS.
+* **Method / Approach:** Informed deep learning by integrating prior knowledge into the dataset,model architecture or loss function.
+* **Functionality / Process:** Uses physical equations, simulations, and system relationships to improve training, constrain model outputs and detect abnormal CPS behaviour
+* **Dataset / Tools:** Various CPS data sources, simulations, testbeds and examples from wind farms, smart grids,industrial CPS and water distribution systems.
+* **Main Findings:** Informed deep learning can improve anomaly detection when data is limited while increasing model explainability and trust.
+* **Limitation:** Requires accurate prior knowledge and multidisciplinary expertise. Incorrect constraints can cause underfitting, overfitting or difficult optimisation.
+* **Relevance / Research Gap:** Need to determine suitable prior knowledge and constraints for different CPS environments while maintaining effective detection with limited data.
+* **DOI / Link:**
