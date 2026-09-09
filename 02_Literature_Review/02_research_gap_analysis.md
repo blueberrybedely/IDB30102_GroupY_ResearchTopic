@@ -16,5 +16,4 @@ Deep learning architectures (GNNs, Transformers, Autoencoders) report high F1-sc
 
 ---
 
-### **Formulated Research Gap Statement**
-> *"Current unsupervised SCADA anomaly detection models either suffer from high false-alarm rates due to axis-aligned feature partitioning, or rely on heavy deep-learning models that exceed the real-time latency budget of edge-deployed PLCs. Furthermore, existing frameworks remain decoupled from automated mitigation mechanisms required to ensure active physical resilience during active payload injection attacks."*
+> Current unsupervised SCADA anomaly detection models either suffer from high false-alarm rates due to axis-aligned feature partitioning, or rely on heavy deep-learning models that exceed the real-time latency budget of edge-deployed PLCs. Furthermore, existing frameworks remain decoupled from automated mitigation mechanisms required to ensure active physical resilience during active payload injection attacks.
