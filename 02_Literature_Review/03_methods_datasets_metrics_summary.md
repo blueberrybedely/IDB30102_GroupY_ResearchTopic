@@ -8,9 +8,6 @@
   * Rate of Change ($\frac{\Delta S}{\Delta t}$): Tracks instantaneous signal slope to identify unphysical state jumps.
 * **Automated Rule-Based Mitigation:** Safe-state actuation triggers initiated when anomaly scores exceed a dynamic threshold $\tau$.
 
-### Benchmark Datasets
-* **Automated Rule-Based Mitigation:** Safe-state actuation triggers initiated when anomaly scores exceed dynamic threshold $\tau$.
-
 ### 2. Benchmark Datasets
 * **SWaT (Secure Water Treatment):** 11 days of continuous operational data (7 days normal, 4 days under 36 physical/cyber attack scenarios).
 * **HAI (Hardware-In-the-Loop Augmented ICS Security Dataset):** Multi-stage boiler and turbine control telemetry.
