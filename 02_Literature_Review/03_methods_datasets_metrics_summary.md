@@ -8,7 +8,7 @@
   * Rate of Change ($\frac{\Delta S}{\Delta t}$): Tracks instantaneous signal slope to identify unphysical state jumps.
 * **Automated Rule-Based Mitigation:** Safe-state actuation triggers initiated when anomaly scores exceed a dynamic threshold $\tau$.
 
-### Benchmark Datasets($\text{Mean}_{5s}$, $\text{Std}_{5s}$, $\Delta S/\Delta t$).
+### Benchmark Datasets
 * **Automated Rule-Based Mitigation:** Safe-state actuation triggers initiated when anomaly scores exceed dynamic threshold $\tau$.
 
 ### 2. Benchmark Datasets
