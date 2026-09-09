@@ -190,3 +190,42 @@ detection models using power-system knowledge.
 * **Limitation:** Limited anomaly labels are not fully utilized during self-supervised training. Sensor-actuator transmission delays/clock synchronization can affect cosine similarity in SCAug. The datasets may also not fully represent real-world CPS complexity. 
 * **Relevance / Research Gap:** Future work should better utilize limited labeled anomaly knowledge, handle sensor-actuator transmission delays, and validate the method on more realistic real-world CPS environments. 
 * **DOI / Link:** https://doi.org/10.1109/TIFS.2025.3588674
+
+*  ### Paper 16:  
+* **Author(s):** Lukram Dhanachandra Singh & Preetisudha Meher
+* **Year:** 2025
+* **Objective/Problem:** Secure electrical CPS against cyberattacks and improve real-time anomaly detection
+* **Method / Approach:** AI-enhanced hybrid PUF using SRAM PUF + Arbiter PUF with LSTM and Autoencoder
+* **Functionality / Process:**Collect PUF responses, train AI model, monitor system behaviour and detect anomalies
+* **Dataset / Tools:** PUF response data under different temperature, voltage and operational conditions
+* **Main Findings:** Proposed approach can provide real-time anomaly detection, secure key generation and improved attack resistance
+* **Limitation:** Limited concrete experimental results and no clearly specified public dataset
+* **Relevance / Research Gap:** Evaluate the approach using real-world electrical CPS datasets and compare with existing anomaly detection methods
+* **DOI / Link:**
+
+ ### Paper 17:  
+* **Author(s):** Tyler Cultice, Md. Saif Hassan Onim, Annarita Giani & Himanshu Thapliyal
+* **Year:** 2024
+* **Objective/Problem:** Detect anomalies in CPS critical infrastructure, especially high-dimensional sensor data
+* **Method / Approach:** Quantum-hybrid One-Class SVM (QOC-SVM) using a quantum fidelity kernel
+* **Functionality / Process:** Preprocess data -> select important features -> encode data into quantum circuits -> calculate quantum fidelity kernel -> train SVM -> classify normal/anomalous data
+* **Dataset / Tools:** Hardware-in-Loop-based (HIL) Augmented Industrial Control System (ICS) Security Dataset, or HAI 20.07
+* **Main Findings:** Achieved 87% accuracy and 0.86 F1-score using 16 features and 8 qubits, 14% higher accuracy than the classical SVM counterpart
+* **Limitation:** Quantum kernel computation is expensive and current NISQ limitations prevent second/minute-level real-time detection. Results were also based on no-noise simulation, so real quantum hardware noise may affect performance.
+* **Relevance / Research Gap:** Few studies apply quantum-assisted SVM to real-world CPS anomaly detection. Future work should reduce quantum overhead, address noise and test other CPS datasets.
+* **DOI / Link:**
+
+ ### Paper 18: 
+* **Author(s):** Mostafa Shehata, Yasmine N. M. Salleh & Ayman Abdel-Hamid
+* **Year:** 2025
+* **Objective/Problem:** Enhance the security of CPS of Industrial Control Systems (ICS) against cyberattacks, especially in critical Oil and Gas infrastructure 
+* **Method / Approach:** Integrated Digital Twin + Blockchain + ML-BAsed anomaly detection using a pre-trained stacked IDS model
+* **Functionality / Process:** Simulate CPS and attacks -> generate operation logs -> detect anomalies using ML -> secure data/authentication using Blockchain -> monitor and respond to threats
+* **Dataset / Tools:** dataset generated from a Digital Twin-based ICS by simulating normal operations and cyberattacks, includes sensor and actuator readings from PLC1 
+* **Main Findings:** Achieved 90% detection rate, 1% FP and 10% FN. Blockchain averaged 250 ms latency and ~120 transaction/sec throughput
+* **Limitation:** Testing was conducted offline in simulation, not in a live/online ICS environment. Further testing is needed for real-world scalability and performance
+* **Relevance / Research Gap:** Integrates DIgital Twin,Blockchain and anomaly detection for enhance CPS security
+* **DOI / Link:**
+
+
+
