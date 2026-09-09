@@ -2,7 +2,13 @@
 
 ### 1. Identified Methods & Algorithms
 * **Extended Isolation Forest (EIF):** Core baseline for low-latency, slope-partitioned anomaly detection.
-* **Rolling Window Preprocessing:** Extraction of spatio-temporal features ($\text{Mean}_{5s}$, $\text{Std}_{5s}$, $\Delta S/\Delta t$).
+* **Rolling Window Preprocessing:** Extraction of spatio-temporal features 
+  * Rolling Mean ($\text{Mean}_{5\text{s}}$): Smooths sensor noise over a 5-second sliding window.
+  * Rolling Standard Deviation ($\text{Std}_{5\text{s}}$): Measures short-term process volatility.
+  * Rate of Change ($\frac{\Delta S}{\Delta t}$): Tracks instantaneous signal slope to identify unphysical state jumps.
+* **Automated Rule-Based Mitigation:** Safe-state actuation triggers initiated when anomaly scores exceed a dynamic threshold $\tau$.
+
+### Benchmark Datasets($\text{Mean}_{5s}$, $\text{Std}_{5s}$, $\Delta S/\Delta t$).
 * **Automated Rule-Based Mitigation:** Safe-state actuation triggers initiated when anomaly scores exceed dynamic threshold $\tau$.
 
 ### 2. Benchmark Datasets
