@@ -130,4 +130,63 @@ detection models using power-system knowledge.
 * **Relevance / Research Gap:** Future work should improve real-time detection and add attack localization. 
 * **DOI / Link:** https://doi.org/10.1109/TPEC63981.2025.10906975
 
+ ### Paper 11:  Securing cyber-physical systems with two-level anomaly detection strategy
+* **Author(s):** Zeeshan Ahmad & Andrei Petrovski 
+* **Year:** 2024
+* **Objective/Problem:** Improve CPS security by detecting both cyber and physical anomalies
+* **Method / Approach:** Two-level CNN-LSTM and Gradient Boosting Machine (GBM). 
+* **Functionality / Process:** Level 1 detects normal or abnormal data → Level 2 identifies the exact anomaly type.  
+* **Dataset / Tools:** Water Distribution Testbed (WDT) dataset with network and physical data. 
+* **Main Findings:** Achieved 100% F1-score on network data and 97.35% on physical data. 
+* **Limitation:** Uses testbed data; real-time performance has not been tested. 
+* **Relevance / Research Gap:** Test the method in real-time CPS and explore unsupervised ML/DL methods. 
+* **DOI / Link:** https://doi.org/10.1109/ICPS59941.2024.10639983
 
+ ### Paper 12: Multivariate time series anomaly detection in cyber-physical systems using sparse attention. 
+* **Author(s):** Yuhao Li et al.
+* **Year:** 2025
+* **Objective/Problem:** Detect anomalies in CPS time series data efficiently. 
+* **Method / Approach:** Sparse Attention Transformer with 1D-CNN and POT. 
+* **Functionality / Process:** Embed time series → detect temporal patterns → calculate anomaly score → use dynamic threshold to identify anomalies.  
+* **Dataset / Tools:** SWaT, MSL, SMAP and SMD datasets. 
+* **Main Findings:** Achieved an average F1-score of 94.28% and improved F1 by up to 29.52% over some baseline methods. 
+* **Limitation:** Tested mainly on benchmark datasets; real-time CPS performance needs further testing. 
+* **Relevance / Research Gap:** Test the model in more CPS environments and improve thresholding for real time detection. 
+* **DOI / Link:** https://doi.org/10.1109/IECON58223.2025.11221241
+
+   ### Paper 13:   An explainable GAN framework for secure anomaly detection in cyber-physical systems
+* **Author(s):** Nishant Kumar et al.
+* **Year:** 2025
+* **Objective/Problem:** Detect CPS anomalies while providing clear explanations for security operators.
+* **Method / Approach:** XAI-GAN using GAN, SHAP, Grad-CAM and attention.
+* **Functionality / Process:** Preprocess data → generate normal data → classify anomalies → generate explanations → issue alerts. 
+* **Dataset / Tools:** SWaT, N-BaIoT and ICS datasets. 
+* **Main Findings:** Achieved 93.8% accuracy, 91.2% F1-score and 0.943 AUC-ROC, with low detection latency. 
+* **Limitation:** Tested mainly on benchmark datasets; further validation across different CPS environments is needed. 
+* **Relevance / Research Gap:** Improve portability, real-time performance and explainability for different CPS environments. 
+* **DOI / Link:** https://doi.org/10.1109/ICCCA66364.2025.11325514
+
+   ### Paper 14:  Causal graph profiling via structural divergence for robust anomaly detection in cyber-physical systems
+* **Author(s):** Arun Vignesh Malarkkan et al.
+* **Year:** 2025
+* **Objective/Problem:** Detect cyberattacks in CPS despite class imbalance, noise and changing data patterns. 
+* **Method / Approach:** CGDAD using causal graphs and structural divergence. 
+* **Functionality / Process:** Learn normal/attack causal graphs → create graph for test segment → compare graphs → classify anomaly.  
+* **Dataset / Tools:** SWaT, WADI, Tennessee Eastman (TE), SMD 
+* **Main Findings:** CGDAD-DYNOTEARS achieved the best overall results across the four datasets and improved detection of complex and delayed attacks. 
+* **Limitation:** Performance depends on good causal graph learning, suitable time-lag selection and quality data. Scaling to large sensor networks can also be costly.
+* **Relevance / Research Gap:** Need continuous causal learning, better scalability and domain adaptation for different industrial CPS environments. 
+* **DOI / Link:** https://doi.org/10.1109/BigData66926.2025.11401886
+
+  
+   ### Paper 15:  Semi-supervised denoising-aware contrastive learning for time series anomaly detection in cyber-physical systems.
+* **Author(s):** Jiyu Tian et al.
+* **Year:** 2025
+* **Objective/Problem:** Detect anomalies in CPS time-series data despite limited labels, complex sensor-actuator interactions and noise. 
+* **Method / Approach:** SSDCL – Semi-Supervised Denoising-Aware Contrastive Learning using SCAug and DEHCL. 
+* **Functionality / Process:** Unlabeled data → SCAug creates semantically consistent positive pairs → denoising using Bayesian/Unscented Kalman filtering → DEHCL learns robust spatio-temporal representations → use only 5% labeled anomaly data to fine-tune classifier → classify normal/abnorma
+* **Dataset / Tools:** PUMP, SWaT, WADI 
+* **Main Findings:** Achieved 97.5% F1 (PUMP), 93.0% (SWaT), 74.4% (WADI) and outperformed the compared SOTA ADCPS methods. It was especially effective for datasets with complex interactions such as WADI. 
+* **Limitation:** Limited anomaly labels are not fully utilized during self-supervised training. Sensor-actuator transmission delays/clock synchronization can affect cosine similarity in SCAug. The datasets may also not fully represent real-world CPS complexity. 
+* **Relevance / Research Gap:** Future work should better utilize limited labeled anomaly knowledge, handle sensor-actuator transmission delays, and validate the method on more realistic real-world CPS environments. 
+* **DOI / Link:** https://doi.org/10.1109/TIFS.2025.3588674
