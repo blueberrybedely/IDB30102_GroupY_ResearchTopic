@@ -191,7 +191,8 @@ detection models using power-system knowledge.
 * **Relevance / Research Gap:** Future work should better utilize limited labeled anomaly knowledge, handle sensor-actuator transmission delays, and validate the method on more realistic real-world CPS environments. 
 * **DOI / Link:** https://doi.org/10.1109/TIFS.2025.3588674
 
-*  ### Paper 16:  
+*  ### Paper 16:  Deep Learning-Driven Real-Time Anomaly Detection for Proactive 
+Cybersecurity in Critical Infrastructure
 * **Author(s):** Lukram Dhanachandra Singh & Preetisudha Meher
 * **Year:** 2025
 * **Objective/Problem:** Secure electrical CPS against cyberattacks and improve real-time anomaly detection
@@ -201,9 +202,9 @@ detection models using power-system knowledge.
 * **Main Findings:** Proposed approach can provide real-time anomaly detection, secure key generation and improved attack resistance
 * **Limitation:** Limited concrete experimental results and no clearly specified public dataset
 * **Relevance / Research Gap:** Evaluate the approach using real-world electrical CPS datasets and compare with existing anomaly detection methods
-* **DOI / Link:**
+* **DOI / Link:** https://doi.org/10.1109/icicnis66685.2025.11315590
 
- ### Paper 17:  
+ ### Paper 17: Anomaly detection for real-world cyber-physical security using quantum hybrid support vector machines.
 * **Author(s):** Tyler Cultice, Md. Saif Hassan Onim, Annarita Giani & Himanshu Thapliyal
 * **Year:** 2024
 * **Objective/Problem:** Detect anomalies in CPS critical infrastructure, especially high-dimensional sensor data
@@ -213,9 +214,9 @@ detection models using power-system knowledge.
 * **Main Findings:** Achieved 87% accuracy and 0.86 F1-score using 16 features and 8 qubits, 14% higher accuracy than the classical SVM counterpart
 * **Limitation:** Quantum kernel computation is expensive and current NISQ limitations prevent second/minute-level real-time detection. Results were also based on no-noise simulation, so real quantum hardware noise may affect performance.
 * **Relevance / Research Gap:** Few studies apply quantum-assisted SVM to real-world CPS anomaly detection. Future work should reduce quantum overhead, address noise and test other CPS datasets.
-* **DOI / Link:**
+* **DOI / Link:** https://doi.org/10.1109/ISVLSI61997.2024.00117
 
- ### Paper 18: 
+ ### Paper 18 
 * **Author(s):** Mostafa Shehata, Yasmine N. M. Salleh & Ayman Abdel-Hamid
 * **Year:** 2025
 * **Objective/Problem:** Enhance the security of CPS of Industrial Control Systems (ICS) against cyberattacks, especially in critical Oil and Gas infrastructure 
@@ -225,7 +226,79 @@ detection models using power-system knowledge.
 * **Main Findings:** Achieved 90% detection rate, 1% FP and 10% FN. Blockchain averaged 250 ms latency and ~120 transaction/sec throughput
 * **Limitation:** Testing was conducted offline in simulation, not in a live/online ICS environment. Further testing is needed for real-world scalability and performance
 * **Relevance / Research Gap:** Integrates DIgital Twin,Blockchain and anomaly detection for enhance CPS security
-* **DOI / Link:**
 
 
+ ### Paper 19: . Adaptive security framework integrated anomaly detection for automated seaports
+* **Author(s):** Lei Guo & Jun Xu
+* **Year:** 2025
+* **Objective/Problem:** Improve security of automated seasports by detecting cyber threats and abnormal behaviour
+* **Method / Approach:** Adaptive security framework integrated with anomaly detection
+* **Functionality / Process:** Monitor system behaviour -> detect anomalies -> identify threats -> adapt security response
+* **Dataset / Tools:** Automated seaport/port operational and network data 
+* **Main Findings:** The framework improves anomaly detection and supports adaptive security responses in automated seasports
+* **Limitation:** Limited real-world testing and may require further validation in different seasport environment
+* **Relevance / Research Gap:** Adaptive anomaly detection for securing automated seasports
+* **DOI / Link:** https://doi.org/10.1109/ASENS64990.2025.11011261
+
+ ### Paper 20: . Beyond anomaly detection: Securing critical infrastructure using PlantShield
+* **Author(s):** Sanskar Shrivasta, Aditya P.Mathur
+* **Year:** 2026
+* **Objective/Problem:** Protect critical infrastructure and Industrial Control Systems (ICS) from cyber-physical attacks such as command injection and sensor spoofing, which may disrupt physical processes
+* **Method / Approach:** PlantShield, a security framework 
+* **Functionality / Process:** PlantShield monitors commands and system behaviour -> detects anomalous or invalid commands -> blocks malicious commands -> generates safe corrective commands to maintain the physical process
+* **Dataset / Tools:** SWat (Secure Water Treatment) testbed, using data collected from the water treatment system and 10 cyber-physical attack scenarios
+* **Main Findings:** PlantShied successfully detected and mitigated 9 out of 10 attacks (90%), with response latency of a few seconds
+* **Limitation:** PlantShied may be vulnerable if the underlying Raspberry Pi is compromised, and some attacks cannot be mitigated when they occur in stages that are not covered by the current implementation
+* **Relevance / Research Gap:** Provides an integrated approach that goes beyond anomaly detection by detecting and automatically mitigating cyber-physical attacks in critical infrastructure
+* **DOI / Link:** https://doi.org/10.1109/CCWC67433.2026.11393869
+
+ ### Paper 21:  Industrial cyber–physical system defense resource allocation using distributed anomaly detection.
+* **Author(s):** Weijie Hao, Pengchao Yao, Tao Yang & Qiang Yang
+* **Year:** 2022
+* **Objective/Problem:** Protect critical electrical infrastructure from cyberattacks while efficiently allocating limited defense resources to the most vulnerable and critical ICPS assets
+* **Method / Approach:** Distributed ARIMA-based anomaly detection combined with NSGA-III multiobjective optimization
+* **Functionality / Process:** Divide ICPS into security zones -> monitor network traffic locally -> detect anomalies and attack paths -> evaluate asset vulnerability, cost and critically -> prioritize defense resources
+* **Dataset / Tools:** Electrical CPS (ECPS) testbed 
+* **Main Findings:** ARIMA effectively detected abnormal network traffic from different cyberattacks. NSGA-III achieved the same Pareto solutions as NSGA-III but reduced execution time from 98.5 s to 64.7 s for 4069 candidate strategies
+* **Limitation:** mainly focuses on network traffic anomalies and defense resource allocation, other physical-domain impacts and more complex attack scenarios may require further investigation
+* **Relevance / Research Gap:** Combines distributed anomaly detection with optimal defense resource allocation for large-scale ICPS with limited security resources
+* **DOI / Link:** https://doi.org/10.1109/JIOT.2021.3088337
+
+ ### Paper 22:  Probabilistic deep learning algorithmic model for robust anomaly detection in decentralized networked cyber-physical systems
+* **Author(s):** Krishna Chaitanya Sunkara, Tanusha Mittal, Naresh Kumar Sripada, Bhargav H K, Falguni Tlajiya & Virendra Singh Thakur
+* **Year:** 2025
+* **Objective/Problem:** Improve anomaly detection in decentralized CPS under uncertain conditions, limited resources and new cyberattacks. Exiting deterministic methods have limitations in uncertainty measurement and detecting new attack paths
+* **Method / Approach:** Probabilistic deep learning using Bayesian Neural Networks (BNN), Graph Attention Networks (GAT) and Transfer Learning
+* **Functionality / Process:** Process distributed CPS data -> analyse uncertainty using BNN -> identify relationships between CPS nodes using graph attention -> use transfer learning to adapt to new threats -> classify anomalies
+* **Dataset / Tools:** SWaT, ICSCAD and BACnet datasets used for evaluating the proposed framework
+* **Main Findings:** Achieved 97.3% accuracy, 96.1% precision and 95.8% recall on SWaT. False positive were reduced by 42%, with 89.7% zero-day attack detection
+* **Limitation:** uncertainty estimation requires more computational resources, making deployment on resource-constrained PLCs challenging.
+* **Relevance / Research Gap:** Combines uncertainty quantification, adaptability and efficient anomaly detection for decentralized CPS
+* **DOI / Link:** https://doi.org/10.1109/ICDSIS65355.2025.11070339
+
+ ### Paper 23:  A multilayer approach for statistical-based anomaly detection in cyber-physical systems
+* **Author(s):** Antonio lannaccone, Roberto Nardone & Alfredo Petruolo
+* **Year:** 2025
+* **Objective/Problem:** Develop a real-time anomaly detection system for CPS that works with limited datasets, noisy data and low computational resources
+* **Method / Approach:** Multilayer statistical-based anomaly detection using Free Probability Theory (FPT) and dynamic thresholding in an edge-cloud architecture
+* **Functionality / Process:** Sensors collect data -> edge performs initial statistical analysis -> cloud performs correlation analysis -> traffic data dynamically adjusts threshold -> anomalies are detected -> early warning is generated
+* **Dataset / Tools:** Real-world Structural Health Monitoring (SHM) data 
+* **Main Findings:** Achieved error rates below 8% under certain conditions and reduced error rate by approximately 15% using dynamic traffic-based thresholding
+* **Limitation:** Performance depends strongly on temporal window size and perturbation level. Poor parameter selection can cause false negatives and mask real anomalies
+* **Relevance / Research Gap:** Provides adaptive, resource-efficient anomaly detection without requiring large labelled datasets for real-world CPS
+* **DOI / Link:** https://doi.org/10.1109/SMC58881.2025.11342449
+
+  
+ ### Paper 24: Deep learning-based anomaly detection and authenticated encryption framework 
+for PMU data in industrial cyber-physical systems
+* **Author(s):** Joel John, Rayappa David Amar Raj, Archana Pallakonda, Rama Muni Reddy Yanamala, Edris Pouresmaeil & Jamshid Aghaei
+* **Year:** 2026
+* **Objective/Problem:** Detect cyber and physical anomalies in PMU data while securing PMU data against threats such as FDIA, MITM and replay attacks
+* **Method / Approach:** BiLSTM-Transformer Autoencoder for anomaly detection + BiLSTM-Transformer classifier for event classification + ChaCha20-HMAC-SHA256 for authenticated encryption
+* **Functionality / Process:** PMU data collection -> preprocessing -> anomaly detection using reconstruction error -> classify abnormal events -> encrypt and authenticate data -> securely transfer to Security Operations Center
+* **Dataset / Tools:** Realistic Labeled PMU Data from an IEEE DataPort SGSMA 2024 Hardware-in-the-Loop (HIL) synchrophasor testbed
+* **Main Findings:** Achieved 97.79% anomaly detection accuracy, with 62% fewer false positives and 90% fewer false negatives than a simple autoencoder. event classification achieved 98.27% accuracy, while encryption mitigated 100% of simulated MITM and replay attacks
+* * **Limitation:** Severe noise and prolonged data loss were not fully explored and these conditions can degrade reconstruction quality
+* **Relevance / Research Gap:** Combines anomaly detection with lightweight authenticated encryption to address both detection and secure communication in industrial CPS
+* **DOI / Link:**  https://doi.org/10.1109/TII.2026.3673230
 
