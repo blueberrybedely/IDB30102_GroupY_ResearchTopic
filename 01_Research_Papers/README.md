@@ -191,7 +191,7 @@ detection models using power-system knowledge.
 * **Relevance / Research Gap:** Future work should better utilize limited labeled anomaly knowledge, handle sensor-actuator transmission delays, and validate the method on more realistic real-world CPS environments. 
 * **DOI / Link:** https://doi.org/10.1109/TIFS.2025.3588674
 
-*  ### Paper 16:  Deep Learning-Driven Real-Time Anomaly Detection for Proactive 
+  ### Paper 16:  Deep Learning-Driven Real-Time Anomaly Detection for Proactive 
 Cybersecurity in Critical Infrastructure
 * **Author(s):** Lukram Dhanachandra Singh & Preetisudha Meher
 * **Year:** 2025
@@ -298,7 +298,7 @@ for PMU data in industrial cyber-physical systems
 * **Functionality / Process:** PMU data collection -> preprocessing -> anomaly detection using reconstruction error -> classify abnormal events -> encrypt and authenticate data -> securely transfer to Security Operations Center
 * **Dataset / Tools:** Realistic Labeled PMU Data from an IEEE DataPort SGSMA 2024 Hardware-in-the-Loop (HIL) synchrophasor testbed
 * **Main Findings:** Achieved 97.79% anomaly detection accuracy, with 62% fewer false positives and 90% fewer false negatives than a simple autoencoder. event classification achieved 98.27% accuracy, while encryption mitigated 100% of simulated MITM and replay attacks
-* * **Limitation:** Severe noise and prolonged data loss were not fully explored and these conditions can degrade reconstruction quality
+* **Limitation:** Severe noise and prolonged data loss were not fully explored and these conditions can degrade reconstruction quality
 * **Relevance / Research Gap:** Combines anomaly detection with lightweight authenticated encryption to address both detection and secure communication in industrial CPS
 * **DOI / Link:**  https://doi.org/10.1109/TII.2026.3673230
 
