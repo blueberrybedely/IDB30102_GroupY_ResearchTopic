@@ -1,37 +1,25 @@
-# Preliminary Source Code
+# Source Code
 
-This folder contains the preliminary source code developed for the proposed research on anomaly detection and resilience in Cyber-Physical Systems (CPS).
+This folder contains the proposed prototype source code for the research project:
+
+**Detecting Man-in-the-Middle (MITM) Attacks in Industrial Control System (ICS) Networks Using Isolation Forest**
 
 ## Purpose
 
-The source code provides an initial technical implementation of the proposed data-driven approach. The code is intended as preliminary technical work for the research proposal and will be further refined during the development and evaluation stages.
+The source code demonstrates the use of the Isolation Forest algorithm
+for detecting anomalous behaviour in ICS network data.
 
-## Files
+## Main Process
 
-### data_preprocessing.py
-This script demonstrates the preliminary data preprocessing process, including:
-- Loading CPS dataset
-- Handling missing values
-- Selecting numerical features
-- Normalising the input data
+1. Load the ICS dataset
+2. Select relevant numerical features
+3. Preprocess the data
+4. Apply Isolation Forest
+5. Generate anomaly labels
+6. Identify normal and anomalous behaviour
 
-### anomaly_detection.py
-This script demonstrates a preliminary Long Short-Term Memory (LSTM) model for anomaly detection.
+## Algorithm
 
-The model is designed to provide an initial proof-of-concept for detecting anomalous patterns in CPS data.
+The proposed anomaly detection algorithm is Isolation Forest.
 
-## Proposed Technical Workflow
-
-CPS Dataset
-↓
-Data Preprocessing
-↓
-Feature Normalisation
-↓
-LSTM-based Anomaly Detection
-↓
-Anomaly Detection Output
-
-## Status
-
-The source code is currently at the preliminary/proof-of-concept stage. Further development, dataset selection, parameter tuning, recovery mechanisms and evaluation will be conducted in later stages of the research.
+The prototype is developed using Python and Scikit-learn.
