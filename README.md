@@ -1,2 +1,2 @@
 # IDB30102_GroupY_Anomaly Detection and Resilience in Cyber-Physical Systems
-Research Proposal – Anomaly Detection and Resilience in Cyber-Physical Systems
+Research Proposal – DETECTING MAN-IN-THE-MIDDLE (MITM) ATTACKS IN INDUSTRIAL CONTROL SYSTEM (ICS) NETWORKS USING ISOLATION FOREST
