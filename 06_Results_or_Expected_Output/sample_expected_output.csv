@@ -1,0 +1,6 @@
+Timestamp,Anomaly_Score,Predicted_Status,Attack_Type
+10:00:01,0.08,Normal,None
+10:00:02,0.11,Normal,None
+10:00:03,0.09,Normal,None
+10:00:04,0.87,Anomaly,MITM
+10:00:05,0.10,Normal,None
